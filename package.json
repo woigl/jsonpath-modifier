@@ -1,0 +1,52 @@
+{
+    "name": "jsonpath-modifier",
+    "version": "0.9.2",
+    "description": "Manipulate JavaScript objects with JSONPath expressions.",
+    "keywords": [
+        "javascript",
+        "json",
+        "typescript",
+        "modify",
+        "manipulate",
+        "json-path",
+        "jsonpath"
+    ],
+    "main": "./dist/index.js",
+    "module": "./dist/index.mjs",
+    "types": "./dist/index.d.ts",
+    "type": "module",
+    "files": [
+        "dist"
+    ],
+    "scripts": {
+        "test": "jest",
+        "build": "tsup",
+        "publish": "tsup && npm publish --access public",
+        "dev": "nodemon ./src/dev.ts"
+    },
+    "repository": {
+        "type": "",
+        "url": "git+ssh://git@github.com/woigl/jsonpath-modifier.git"
+    },
+    "author": {
+        "name": "Stefan Walter",
+        "email": "woigl@mac.com"
+    },
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/woigl/jsonpath-modifier/issues"
+    },
+    "homepage": "https://github.com/woigl/jsonpath-modifier",
+    "devDependencies": {
+        "@types/jest": "^29.5.12",
+        "@types/jsonpath": "^0.2.4",
+        "jest": "^29.7.0",
+        "nodemon": "^3.1.0",
+        "prettier": "^3.2.5",
+        "ts-jest": "^29.1.2",
+        "ts-node": "^10.9.2",
+        "tsconfig-paths": "^4.2.0",
+        "tsup": "^8.0.2",
+        "typescript": "^5.3.3"
+    }
+}
